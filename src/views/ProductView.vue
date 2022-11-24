@@ -54,8 +54,8 @@
               <div v-for="index in TAILLE" :key="index" class="py-2 col-1 mix border-0" :class="items.at(index%4)"
                    style="min-width: 200px; flex-shrink: 0;  height: 200px;">
                 <div class="border">
-                  <img class="" height="150" src="@/assets/logo.png"/>
-                  <h6>{{ index }}</h6>
+                  <!-- <img class="" height="150" :src="this.imgLink(index)"/> -->
+                  <h6>link {{ this.imgLink(index) }}</h6>
                 </div>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default {
   data() {
     return {
       visible: false,
-      TAILLE: 16,
+      TAILLE: 14,
       items: [
         "eq",
         "ma",
@@ -126,11 +126,8 @@ export default {
 
   },
   methods: {
-    mineOne(option) {
-      console.log(option);
-      // new Modal($('.modal'),{
-
-      // }).show()
+    imgLink(index){
+      return "/assets/images/"+index+".jpg";
     },
     getActive(option) {
       console.log(links);
