@@ -1,5 +1,5 @@
 <template>
-  <section id="Products"  class="product"
+  <section v-motion-slide-visible-once-bottom id="Products"  class="product"
            style="min-height: fit-content;padding-top: 100px; padding-bottom: 50px;  height: fit-content; width: 100%;">
 
     <div class="container mb-5 h-100">
