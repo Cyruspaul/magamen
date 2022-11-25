@@ -40,13 +40,14 @@
         <div style="height: fit-content; " class="container w-100">
           <div class=" row flex-wrap d-none d-md-flex align-items-center justify-content-center listOfProducts"
                style="height:100%;  width: fit-content;">
-            <div v-for="index in TAILLE" :key="index" class="py-2 col-auto mix border-0" :class="items.at(index%4)"
-                 style="width: 300px; flex-shrink: 0;  height: 200px;">
-              <div class="border">
-                <img class="" height="150" src="@/assets/logo.png"/>
-                <h6>{{ index }}</h6>
+               <div v-for="(item,index) in ImageList" :key="index" class="py-2 col-1 mix border-0" :class="items.at(index%4)"
+                   style="min-width: 200px; flex-shrink: 0;  height: 200px;">
+                <div class="border" style="">
+                  <!-- <el-image style="width: 100px; height: 150px" lazy="true" loading="eager" src="./images/1.jpg" fit="cover" /> -->
+                  <img src="" class="img" width="150" height="150"/>
+                  <h6>{{item}}</h6>
+                </div>
               </div>
-            </div>
           </div>
           <el-scrollbar class="justify-content-evenly d-block d-md-none listOfProducts1"
                         style="height:fit-content;  width: 100%;">
@@ -54,8 +55,8 @@
               <div v-for="index in TAILLE" :key="index" class="py-2 col-1 mix border-0" :class="items.at(index%4)"
                    style="min-width: 200px; flex-shrink: 0;  height: 200px;">
                 <div class="border">
-                  <!-- <img class="" height="150" :src="this.imgLink(index)"/> -->
-                  <h6>link {{ this.imgLink(index) }}</h6>
+                  <img class="" height="150" src="./images/1.png"/>
+                  <h6>link {{this.imgLink(index)}}</h6>
                 </div>
               </div>
             </div>
@@ -92,7 +93,24 @@ export default {
         "ma",
         "in",
         "re"
-      ]
+      ],
+      ImageList:{
+        0:'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+        1:'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg',
+        2:"./images/2.jpg",
+        3:"./images/3.jpg",
+        4:"./images/4.jpg",
+        5:"./images/5.jpg",
+        6:"./images/6.jpg",
+        7:"./images/7.jpg",
+        8:"./images/8.jpg",
+        9:"./images/9.jpg",
+        10:"./images/10.jpg",
+        11:"./images/11.jpg",
+        12:"./images/12.jpg",
+        13:"./images/13.jpg",
+        14:"./images/14.jpg",
+      }
     }
   },
   mounted() {
@@ -125,9 +143,19 @@ export default {
     mixer1.filter('all')
 
   },
+  created(){
+
+    const items = document.getElementsByClassName("img")
+console.log(items);
+var index=0;
+    for(index ; index<items.length;index++){
+      const img = items[index]
+      console.log(index);
+    }
+  },
   methods: {
     imgLink(index){
-      return "/assets/images/"+index+".jpg";
+      
     },
     getActive(option) {
       console.log(links);
