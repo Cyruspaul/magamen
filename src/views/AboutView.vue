@@ -2,27 +2,27 @@
     <section id="About" class="container overflow-hidden py-5 d-flex align-items-center position-relative" style="min-height: 90vh; width: 100vw; ">
         <div class="row h-100  d-flex align-items-center ">
             <div class="col-lg-7">
-                <h6 class="text-success fw-bold">|| About Us</h6>
+                <h6 class="text-success fw-bold">|| {{$t('About.title')}}</h6>
                 
                 <h1 class="h1 fw-bold items my-3">
-                    Get Amazing Service <br/> From Us
+                  {{$t('About.firstText1')}}<br/>
+                  {{$t('About.firstText2')}}
                     <span class="text-success h1 fw-bolder">.</span>
                 </h1>
 
                 <p class="vision me-0 pe-sm-2 pe-md-5">
-                    Maga Men company is mainly committed to export good quality product to the world.
+                  {{$t('About.second')}}
                 </p>
                 
                 <div class="pe-3">
                     <p class="col-12 mb-3">
-                        Hebei Maga Men trading is a leading supplier of laboratory and medical equipments, materials,  instruments and workwear clothings.  we provide a wide range of products for educational, research, clinical, and industrial.
-     we also provide different workwear, such as , Healthcare, school uniform, corporate uniforms , constructions uniforms, industry uniform,etc.
+                      {{$t('About.content')}}
                     </p>
                     <ul class="list-item-with-icon p-0 row row-cols-2 g-1 mt-4">
-                        <li>24/7 Online Support</li>
-                        <li>Expert Team</li>
-                        <li>Pure Equipment</li>
-                        <li>Unlimited Product</li>
+                        <li>{{$t('About.items[0]')}}</li>
+                        <li>{{$t('About.items[1]')}}</li>
+                        <li>{{$t('About.items[2]')}}</li>
+                        <li>{{$t('About.items[3]')}}</li>
                     </ul>
                 </div>
             </div>

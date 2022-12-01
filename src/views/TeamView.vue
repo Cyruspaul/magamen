@@ -7,8 +7,8 @@
       <div class="section-title-wrapper mb-5">
         <div class="row ">
           <div class="col-sm-12  col-md-6 mx-auto text-center">
-            <small class="text-uppercase  text-center mt-5 mb-4 display-5 fw-bolder" style="text-shadow: 3px 2px lightgrey;">Meet Our Team</small>
-            <p class="lead my-3">You can expect to find a friendly customer service person waiting to help You.</p>
+            <small class="text-uppercase  text-center mt-5 mb-4 display-5 fw-bolder" style="text-shadow: 3px 2px lightgrey;">{{$t('Team.title')}}</small>
+            <p class="lead my-3">{{$t('Team.firstText')}}</p>
           </div>
         </div>
       </div>
@@ -20,8 +20,10 @@
               <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Card image cap" width="200" height="200" class="img-fluid rounded-circle  img-thumbnail  shadow-md">
             </div>
             <div class="card-body p-0">
-              <h4 class="card-title mb-2">Mr. Gabriel Alogo <br> Alogo Esama</h4><span class="text-primary d-block font-italic mb-3">Bachelor in International  Trade and Economics</span>
-              <p class="card-text mb-4 text-muted">+8615833933281</p>
+              <h4 class="card-title mb-2">{{$t('Team.items[0].name1')}} <br>{{$t('Team.items[0].name2')}}</h4><span class="text-primary d-block font-italic mb-3">
+              {{$t('Team.items[0].major')}}
+            </span>
+              <p class="card-text mb-4 text-muted">{{$t('Team.items[0].tel')}}</p>
               <ul class="list-inline social-icons-list mb-0">
                 <li class="list-inline-item"><a href="javascript:void(0);" class="font-lg mx-1"><i
                     class="fab  fab fa-facebook-f" aria-hidden="true"></i></a></li>
@@ -40,8 +42,8 @@
               <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Card image cap" width="200" height="200" class="img-fluid img-thumbnail rounded-circle shadow">
             </div>
             <div class="card-body p-0">
-              <h4 class="card-title mb-2"> Mr. Paulino Nguema <br> Ondo Oyana</h4><span class="text-primary d-block font-italic mb-3">Bachelor in Communication  Engineering</span>
-              <p class="card-text mb-4 text-muted">+8618581631874</p>
+              <h4 class="card-title mb-2"> {{$t('Team.items[1].name1')}} <br> {{$t('Team.items[1].name2')}}</h4><span class="text-primary d-block font-italic mb-3">{{$t('Team.items[1].major')}}</span>
+              <p class="card-text mb-4 text-muted">{{$t('Team.items[1].tel')}}</p>
               <ul class="list-inline social-icons-list mb-0">
                 <li class="list-inline-item"><a href="javascript:void(0);" class="font-lg mx-1"><i
                     class="fab  fab fa-facebook-f" aria-hidden="true"></i></a></li>

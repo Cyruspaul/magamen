@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import App from "./App.vue";
 // import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-import '@/assets/bootstrap.min.css'
+import '/public/bootstrap.min.css'
 import 'element-plus/theme-chalk/index.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import ELementPlus from 'element-plus'

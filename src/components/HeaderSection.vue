@@ -4,10 +4,10 @@
     <nav id="navbar" class="navbar navbar-expand-md w-100 " style="padding-top: 12px;">
       <div class="container bg-white p-0">
         <a href="/" class="navbar-brand logo router-link-active ps-3">
-          <img src="../assets/logo.png" height="50" width="50" /> <span class="small muted">Maga Men</span>
+          <img src="../assets/logo.png" height="50" width="45" /> <span class="small muted">Maga Men</span>
         </a>
         <button aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler btn btn-outline-light border-0 me-3" data-bs-target="#navbarCollapse" data-bs-toggle="collapse"
+                class="navbar-toggler btn btn-light border-0 me-3" data-bs-target="#navbarCollapse" data-bs-toggle="collapse"
                 type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12px" height="12px" viewBox="0 0 24 24"
               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -20,14 +20,14 @@
 
         <div id="navbarCollapse" class="m-0 collapse navbar-collapse bg-white ps-2 px-lg-5 justify-content-end" style="z-index: 1000;">
           <ul id="navbar-navlist" class="navbar-nav ms-auto navbar-center">
-            <li class="nav-item"><a  v-scroll-to="'#Top'" href="javascript: void(0);" v-on:click="this.getActive(0)" class="nav-link active">Home</a></li>
-            <li class="nav-item"><a  v-scroll-to="'#About'" href="javascript: void(0);" v-on:click="this.getActive(1)" class="nav-link">About Us</a></li>
-            <li class="nav-item"><a  v-scroll-to="'#Products'" href="javascript: void(0);" v-on:click="this.getActive(2)" class="nav-link">Products</a></li>
-            <li class="nav-item"><a  v-scroll-to="'#Team'" href="javascript: void(0);" v-on:click="this.getActive(3)" class="nav-link">Team</a></li>
-            <li class="nav-item"><a  v-scroll-to="'#Contact'" href="javascript: void(0);" v-on:click="this.getActive(4)" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a  v-scroll-to="'#Top'" href="javascript: void(0);" v-on:click="this.getActive(0)" class="nav-link active">{{$t('links[0]')}}</a></li>
+            <li class="nav-item"><a  v-scroll-to="'#About'" href="javascript: void(0);" v-on:click="this.getActive(1)" class="nav-link">{{$t('links[1]')}}</a></li>
+            <li class="nav-item"><a  v-scroll-to="'#Products'" href="javascript: void(0);" v-on:click="this.getActive(2)" class="nav-link">{{$t('links[2]')}}</a></li>
+            <li class="nav-item"><a  v-scroll-to="'#Team'" href="javascript: void(0);" v-on:click="this.getActive(3)" class="nav-link">{{$t('links[3]')}}</a></li>
+            <li class="nav-item"><a  v-scroll-to="'#Contact'" href="javascript: void(0);" v-on:click="this.getActive(4)" class="nav-link">{{$t('links[4]')}}</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{$t('links[6]')}}
+                {{$t('links[5]')}}
               </a>
               <ul class="dropdown-menu">
                 <li><a v-for="entry in languages" :key="entry.title" @click="changeLocale(entry.language)" class="dropdown-item">

@@ -7,6 +7,18 @@ import ServiceView from "@/views/ServiceView.vue";
 export default {
   components:{
     ServiceView
+  },
+  mounted() {
+    scrollTo(0,0)
+    if(document.getElementById("homeButton") !== null){
+      document.getElementById("homeButton").click()
+    }
+  },
+  updated() {
+    scrollTo(0,0)
+    if(document.getElementById("homeButton") !== null){
+      document.getElementById("homeButton").click()
+    }
   }
 }
 

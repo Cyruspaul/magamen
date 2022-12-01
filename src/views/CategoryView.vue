@@ -8,12 +8,12 @@
             <div class="" style="height: 35%;background-color: bisque;"></div>
         </div>
         <div class="h-auto w-100 container" style="">
-            <p class="text-uppercase text-white text-center my-3 display-5 fw-bolder" style="text-shadow: 3px 2px darkslategrey;">Top Categories</p>
+            <p class="text-uppercase text-white text-center my-3 display-5 fw-bolder" style="text-shadow: 3px 2px darkslategrey;">{{$t('Categories.title')}}</p>
             <div class=" h-100 p-4 px-md-0 row gap-3 align-items-center justify-content-center " >
                 
-                <div class="card col item d-flex flex-column align-items-center justify-content-evenly" v-for="(index, item) in items" :key="item"  style="height: 200px; min-width:170px">
-                    <img :src="index" width="100" height="100"/>
-                    <h6>{{item}}</h6>
+                <div class="card col item d-flex flex-column align-items-center justify-content-evenly" v-for="(value, item,index) in items" :key="item"  style="height: 200px; min-width:170px">
+                    <img :src="value" width="100" height="100"/>
+                    <h6 class="text-uppercase">{{$t('Categories.items['+index+']')}}</h6>
                 </div>
 
             </div>
