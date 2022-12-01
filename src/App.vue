@@ -2,7 +2,7 @@
 
 
 import ServiceView from "@/views/ServiceView.vue";
-
+import i18n from '/src/locales/i18n'
 
 export default {
   components:{
@@ -19,7 +19,11 @@ export default {
     if(document.getElementById("homeButton") !== null){
       document.getElementById("homeButton").click()
     }
-  }
+  },
+  setup() {
+    if (localStorage.getItem('localeKey'))
+      i18n.global.locale = localStorage.getItem('localeKey')
+  },
 }
 
 </script>

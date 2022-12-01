@@ -1,7 +1,7 @@
 <template>
   <!-- https://tunatheme.com/tf/html/broccoli-preview/broccoli/img/bg/11.png -->
   <div id="Contact" v-motion-slide-visible-once-bottom class="">
-
+<!--v-motion-slide-visible-once-bottom-->
     <div class="call_us bg-light" style=" height: 500px; background: url('https://tunatheme.com/tf/html/broccoli-preview/broccoli/img/bg/6.jpg') no-repeat center;
      background-size: cover;">
 
@@ -22,28 +22,28 @@
         </div>
       </div>
     </div>
-    <section id="Second" style="padding-top: 80px" class="bg-light d-flex justify-content-center align-items-center">
+    <section id="Second" style="padding-top: 80px; background: url('/images/Picture1.jpg') no-repeat center; background-size: cover; backdrop-filter: contrast(1.1)" class="bg-light d-flex justify-content-center align-items-center">
       <div class="container-fluid py-5">
         <div class="container">
-          <div class="text-center">
+          <div class="text-center" >
             <small class="text-uppercase  text-center mt-5 mb-4 display-5 fw-bolder" style="text-shadow: 3px 2px lightgrey;">{{$t('Contact.title')}}</small>
             <h1 class="mt-2 mb-5">{{$t('Contact.firstText')}}</h1>
           </div>
-          <div class="row align-items-center">
-            <div class="col-md-5 shadow">
-              <div class="d-flex flex-column align-items-center  mb-3 p-4">
+          <div class="row align-items-center text-start">
+            <div class="col-md-5 bg-white py-3 shadow">
+              <div class="d-flex flex-column align-items-start text-start mb-3 p-4">
                   <h5 class="font-weight-bold mb-3"><i class="bi bi-geo me-3"></i>{{$t('Contact.items[0]')}}</h5>
                   <p class="m-0">NO. 301. YUJIANG SOUTH FENGCHANG ROAD, SHIJIAZHUANG, HEBEI PROVINCE</p>
               </div>
-              <div class="d-flex flex-column align-items-center  mb-3 p-4">
+              <div class="d-flex flex-column align-items-start  mb-3 p-4">
                   <h5 class="font-weight-bold mb-3"><i class="bi bi-mailbox me-3"></i>{{$t('Contact.items[1]')}}</h5>
                   <p class="m-0">VentasMagamen@hotmail.com</p>
               </div>
-              <div class="d-flex flex-column align-items-center  mb-3 mb-md-0 p-4">
+              <div class="d-flex flex-column align-items-start  mb-3 mb-md-0 p-4">
                   <h5 class="font-weight-bold">
                     <i class="me-3 bi bi-telephone"></i>{{$t('Contact.items[2]')}} </h5>
                   <div class="m-0">
-                    <ul class="list-unstyled text-decoration-non py-3 ps-4">
+                    <ul class="list-unstyled text-decoration-none py-3">
                       <li class="mb-1"><i class="bi bi-arrow-right-short"></i> +86 158 3393 3281 (Gabriel A)</li>
                       <li class="mb-1"><i class="bi bi-arrow-right-short"></i> +86 158 3393 3281 (Gracia Divina)</li>
                     </ul>
@@ -84,8 +84,12 @@
     </section>
   </div>
 
-  <div class="w-100 justify-content-center  bg-light d-flex align-items-center " style="height: 100px">
-    <h6 class="fw-light">Maga Man @Copyright</h6>
+  <div class="w-100 justify-content-evenly  bg-light d-flex align-items-center " style="height: 100px">
+    <span class="small">
+      <a target="_blank" href="https://icons8.com/icon">icons by Icons8</a><br />
+      <p class="fw-light">Photo by <a href="https://unsplash.com">Unsplash</a></p>
+    </span>
+    <h6 class="fw-light">Maga Man @Copyright</h6><br />
   </div>
 </template>
 
@@ -104,7 +108,7 @@ export default {
         to_name: '',
         from_email: '',
         message: '',
-        to_email: '2442152337@qq.com',
+        to_email: 'VentasMagamen@hotmail.com',
       }
     }
   },

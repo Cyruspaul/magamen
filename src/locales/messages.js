@@ -63,16 +63,19 @@ const messages ={
             firstText:'You can expect to find a friendly customer service person waiting to help You.',
             items:[
                 {
-                    name1:"Mr. Gabriel Alogo",
-                    name2:"  Ondo Oyana",
-                    major:"Bachelor in International  Trade and Economics",
-                    tel:"+86 158 3393 3281"
+                    name1 :"Mr. Gabriel Alogo",
+                    name2:" Ondo Oyana",
+                    tel :"+86 158 3393 3281"
                 },
                 {
-                    name1:" Mr. Paulino Nguema",
-                    name2:" Alogo Esama",
-                    major:"Bachelor in Communication  Engineering",
-                    tel:"+86 185 8163 1874"
+                    name1:"Miss Gracia",
+                    name2:"Divina",
+                    tel :"+86 185 8163 1874"
+                },
+                {
+                    name1:"Miss Grace",
+                    name2:"A.",
+                    tel :"+86 185 8163 1874"
                 }
             ],
             CallUs:{
@@ -148,13 +151,16 @@ const messages ={
                 {
                     name1 :"Mr. Gabriel Alogo",
                     name2:" Ondo Oyana",
-                    major :" licenciatura en comercio internacional y economía ",
                     tel :"+86 158 3393 3281"
                 },
                 {
-                    name1:" Sr. Paulino Nguema",
-                    name2:" Alogo Esama",
-                    major:" licenciatura en ingeniería de la comunicación ",
+                    name1:"Miss Gracia",
+                    name2:"Divina",
+                    tel :"+86 185 8163 1874"
+                },
+                {
+                    name1:"Miss Grace",
+                    name2:"A.",
                     tel :"+86 185 8163 1874"
                 }
             ],

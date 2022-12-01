@@ -1,6 +1,6 @@
 <template>
     <section id="About" class="container overflow-hidden py-5 d-flex align-items-center position-relative" style="min-height: 90vh; width: 100vw; ">
-        <div class="row h-100  d-flex align-items-center ">
+        <div class="row h-100  overflow-hidden d-flex align-items-center ">
             <div class="col-lg-7">
                 <h6 class="text-success fw-bold">|| {{$t('About.title')}}</h6>
                 
@@ -26,7 +26,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col mx-auto ms-lg-auto me-lg-0 position-relative h-100">
+            <div class="col mx-auto overflow-hidden ms-lg-auto me-lg-0 position-relative h-100">
              
                 <div class="h-100 row align-items-center justify-content-around w-100 g-3">
                     <div class="img-thumbnail shadow-sm mt-5"   style="height: 400px; width: 40%; background: url('https://images.unsplash.com/photo-1526930382372-67bf22c0fce2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFib3JhdG9yeSUyMGVxdWlwbWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60') no-repeat center;"></div>
