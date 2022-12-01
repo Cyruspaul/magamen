@@ -2,12 +2,14 @@ const messages ={
     en:{
         title:'Agency',
         links:[
-            'Home', 'Services', 'About Us', 'Choose Us', 'Team', 'Contact','Language'
+            'Home', 'About Us', 'Product', 'Team', 'Contact','Language'
         ],
-        sectionTwo:{
-            title:'WHAT WE DO',
-            firstText:'We Offer Multiple Services',
-            subtitle:'Save your company\'s productive time with the help of our support',
+        TopHeaderL:{
+            title1: 'THE NEW TECHNOLOGIES',
+            title2: 'IN YOUR HAND',
+            firstText:'100% genuine Products',
+            subtitle:'Maga Men Laboratory and Medical Equipment Supplier',
+            button:'EXPLORE PRODUCTS',
             items:[
                 {title:'Communication',
                  content:'It is essential in all management and we have trained personnel in language communication such as Spanish, French, English and Chinese to help our customers.'
@@ -23,119 +25,157 @@ const messages ={
                 },
             ]
         },
-        sectionThree: {
-            title:'WHO WE ARE',
-            firstText:'Most Effective Creative Service Provider For Companies',
-            subtitle:'The company arises as a result of the idea of providing a better service to custumers regarding the issue of imports and exports, as well as better processing for students abroad. We have been established to provide an excellent services for the best custumers satisfaction. We believe in keeping the custumers happy and providing them with products at a very competent price, we an excellent staffs who will guide you with their best ideas and knowledge of the market.',
+        About: {
+            title:'About Us',
+            firstText1:"Get Amazing Service",
+            firstText2:"From Us",
+            second:' Maga Men Company is mainly committed to export good quality product to the world.',
+            content:' Hebei Maga Men trading is a leading supplier of laboratory and medical equipments, materials,  instruments and workwear clothings.  We provide a wide range of products for educational, research, clinical, and industrial.We also provide different workwear, such as , Healthcare, school uniform, corporate uniforms , constructions uniforms, industry uniform,etc...',
             items:[
-                {title:'Innovative Works',content:'We contribute ideas and solutions to workplace challenges or problems but We also consistently endeavor to exceed our customer’s expectations, not simply to meet their requirements'},
-                {title:'Certified Company',content:'How all this mistaken idea of denouncing pleasures and praising pain was born and we will give you a complete account of the system.'},
-                {title:'Very Experienced',content:'How all this mistaken idea of denouncing pleasures and praising pain was born and we will give you a complete account of the system.'},
-                {0:'Current Projects',1:'Satisfied Clients',2:'Finished Projects',3:'Working Hours'}
+               "24/7 Online Support",
+                "Expert Team",
+                "Pure Equipment",
+                "Unlimited Product",
             ]
         },
-        sectionFour: {
-            title:'WHY CHOOSE US',
-            firstText:'We Have Leadership Strong Experience In Business',
-            subtitle:'We help by providing an efficient and safe service for all kinds of procedures.',
+        Categories: {
+            title:'Top Categories',
             items:[
-                
-                    'Knowledge of the Chinese market, interact with suppliers so that our customers can be satisfied with a good service.',
-                    'Reliability and responsibility to gain our customers.',
-                    'Transparency in all our services',
-                    'Good management of products or articles'
+                "EQUIPMENT",
+                "MATERIALS",
+                "INSTRUMENTS",
+                "REAGENTS"
             ]
         },
-        sectionFive: {
-            title:'MEET OUR TEAM',
-            firstText:'Our creative specialists work on an international level at branding, design and development.',
+        Products: {
+            title:'Products',
+            firstText:'Click here to download our product Catalog ',
             items:[
-                'Bachelor in International Trade and Economics',
-                'Bachelor in Communication Engineering'
-            
+                "All",
+                "Equipments",
+                "Materials",
+                "Instruments",
+                "Reagent",
             ]
         },
-        sectionSix: {
+        Team: {
+            title:'Meet Our Team',
+            firstText:'You can expect to find a friendly customer service person waiting to help You.',
+            items:[
+                {
+                    name1:"Mr. Gabriel Alogo",
+                    name2:"  Ondo Oyana",
+                    major:"Bachelor in International  Trade and Economics",
+                    tel:"+86 158 3393 3281"
+                },
+                {
+                    name1:" Mr. Paulino Nguema",
+                    name2:" Alogo Esama",
+                    major:"Bachelor in Communication  Engineering",
+                    tel:"+86 185 8163 1874"
+                }
+            ],
+            CallUs:{
+                1:"Call us at any time",
+                2:"+86 158 3393 3281",
+                3:"From Monday to Saturday, 8:30AM to 5:30PM"
+            }
+        },
+        Contact: {
             title:'GET IN TOUCH',
-            firstText:'Contact For Any Queries',
+            firstText:'Contact For All Queries',
             items:[
-                
-                    'Our Office',
+                    'Address',
                     'Email Us',
-                    'Call Us',
-                    'Join Our Wechat Group for more informations'
-                
+                    'Mobile Phone / WhatsApp',
+                    'Send us a mail',
+                    'Name',
+                    'Email',
+                    'Message',
+                    'Send Message'
             ]
         }
     },
     es:{
         title:'Agencia',
         links:[
-            'Inicio ','Servicios ', 'Quiénes Somos ','Nos Eligen',' Equipo ', 'Contacto','Idioma'
+            'Inicio ','Sobre Nosotros ', 'Producto ','Nos Eligen',' Equipo ', 'Contacto','Idioma'
         ],
-        sectionTwo:{
-            title:'Lo que hacemos',
-            firstText:'Ofrecemos Múltiples Servicios.',
-            subtitle:'Ahorre el tiempo productivo de su empresa con la ayuda de nuestro soporte.',
+        TopHeaderL:{
+            title1:'Las nuevas tecnologías',
+            title2:'en su mano',
+            firstText:'100% productos genuinos',
+            subtitle:'Laboratorio de los hombres de Maga y proveedor del equipo médico',
+            button:'Explorar productos',
+        },
+        About: {
+            title:'Sobre Nosotros',
+            firstText1:"Obtener servicio increíble",
+            firstText2:"de nosotros",
+            second:'Maga Men Company se compromete principalmente a exportar productos de buena calidad al mundo. ',
+            content: "Hebei Maga Men trading es un proveedor líder de equipos de laboratorio y médicos, materiales, instrumentos y ropa de trabajo. Ofrecemos una amplia gama de productos para la educación, investigación, clínica e industrial. También proporcionamos diferentes prendas de trabajo, tales como, la salud, uniforme escolar, uniformes corporativos, uniformes de construcción, uniforme de la industria,etc...",
             items:[
-                {title:'Comunicación',
-                 content:'Es esencial en toda la gestión y tenemos personal capacitado en comunicación lingüística como español, francés, inglés y chino para ayudar a nuestros clientes'
-                },
-                {title:'Logística',
-                 content:'Un problema que muchos enfrentan cuando quieren exportar o importar productos, por lo que para nosotros la logística es una prioridad para satisfacer a nuestros clientes, nos encontramos con mejores agencias y compañías navieras.'
-                },
-                {title:'Encontrar fábricas y suministros para la clientela',
-                 content:'Dependiendo de las demandas y necesidades de nuestros clientes, encontramos suministros y fábricas que tienen los productos o artículos que nuestros clientes necesitan.'
-                },
-                {title:'Admisión para estudiar en el extranjero',
-                 content:'para la gestión de admisiones de estudios en el extranjero, ofrecemos la solución para la búsqueda de universidades asequibles y de acuerdo ala demanda de los estudiantes, damos una guía previa a los estudiantes, traemos mejores ofertas de universidades en China, Malasia, así como otros países.'
-                },
+                "Soporte en línea 24/7 ",
+                "Equipo de expertos ",
+                "Puro equipamiento ",
+                "Producto ilimitado ",
             ]
         },
-        sectionThree: {
-            title:'Quiénes Somo',
-            firstText:'El proveedor de servicios creativos más eficaz para las empresas',
-            subtitle:'La empresa surge como resultado de la idea de ofrecer un mejor servicio a los clientes en materia de importaciones y exportaciones, así como un mejor procesamiento para los estudiantes en el extranjero. Hemos sido establecidos para proporcionar un excelente servicio para la mejor satisfacción de los clientes. Creemos en mantener a los clientes felices y proporcionarles productos a un precio muy competente, somos un excelente personal que le guiará con sus mejores ideas y conocimiento del mercado. ',
+        Categories: {
+            title:'Categorías',
             items:[
-                {title:'Obras Innovadoras',content:'cómo nació toda esta idea equivocada de denunciar los placeres y alabar el dolor y te daremos una explicación completa del sistema'},
-                {title:'Empresa Certificada',content:'cómo nació toda esta idea equivocada de denunciar los placeres y alabar el dolor y te daremos una explicación completa del sistema'},
-                {title:'Muy Experimentado ',content:'cómo nació toda esta idea equivocada de denunciar los placeres y alabar el dolor y te daremos una explicación completa del sistema'},
-                {0:'Proyectos En Curso',1:'Clientes Satisfechos',2:'Proyectos Terminados',3:'Horas De Trabajo'}
+                "Equipo",
+                "Materiales",
+                "Instrumentos",
+                "Reactivos"
             ]
         },
-        sectionFour: {
-            title:'¿Por Qué Nos Eligen?',
-            firstText:'Tenemos una fuerte experiencia en liderazgo empresarial',
-            subtitle:'Ayudamos proporcionando un servicio eficiente y seguro para todo tipo de procedimientos',
+        Products: {
+            title:'Productos',
+            firstText:'Haga clic aquí para descargar nuestro catálogo de productos. ',
             items:[
-                
-                    'Conocimiento del mercado chino, interactuar con los proveedores para que nuestros clientes puedan estar satisfechos con un buen servicio',
-                    'Confiabilidad y responsabilidad para ganar a nuestros clientes.',
-                    'Transparencia en todos nuestros servicios',
-                    'Buena gestión de productos o artículos'
-                
+                "Todos ",
+                "Equipos ",
+                "Materiales ",
+                "Instrumentos ",
+                "Reactivo ",
             ]
         },
-        sectionFive: {
-            title:'Conoce A Nuestro Equipo',
-            firstText:'Nuestros especialistas creativos trabajan a escala internacional en el ámbito de la marca, el diseño y el desarrollo',
+        Team: {
+            title:'Conoce a nuestro equipo',
+            firstText:'Puede esperar encontrar a un amable servicio de atención al cliente que le ayude',
             items:[
-                
-                    'Licenciado en comercio internacional y economía',
-                    'Licenciatura en ingeniería de la comunicación'
-                
-            ]
+                {
+                    name1 :"Mr. Gabriel Alogo",
+                    name2:" Ondo Oyana",
+                    major :" licenciatura en comercio internacional y economía ",
+                    tel :"+86 158 3393 3281"
+                },
+                {
+                    name1:" Sr. Paulino Nguema",
+                    name2:" Alogo Esama",
+                    major:" licenciatura en ingeniería de la comunicación ",
+                    tel :"+86 185 8163 1874"
+                }
+            ],
+            CallUs :{
+                1:" llámenos en cualquier momento ",
+                2:"+86 158 3393 3281",
+                3:" De Lunes a Sábado, de 8:30 a 17:30 horas"
+            }
         },
-        sectionSix: {
+        Contact: {
             title:'Ponte En Contacto',
             firstText:'Contacto para cualquier consulta',
             items:[
-                
-                    'Nuestra Oficina',
-                    'Correo Electrónico',
-                    'Llámenos ',
-                    ' Únase a nuestro grupo Wechat para más información'
-                
+                'Domicilio',
+                'Correo electrónico',
+                'Teléfono Móvil / WhatsApp',
+                'Envíenos un correo',
+                'Nombre',
+                'Correo electrónico',
+                'Mensaje',
+                'Enviar mensaje'
             ]
         }
     }

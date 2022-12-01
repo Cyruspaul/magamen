@@ -4,34 +4,34 @@
 
     <div class="container mb-5 h-100">
       <p class="text-uppercase  text-center mt-5 mb-4 display-5 fw-bolder" style="text-shadow: 3px 2px lightgrey;">
-        Products</p>
-      <p class="mb-5">Click here to download our product Catalog <a href="/"><i
+        {{$t('Products.title')}}</p>
+      <p class="mb-5">{{$t('Products.firstText')}}<a href="/"><i
           class="ms-4 btn btn-primary bi bi-download"/></a></p>
 
       <ul class="nav text-center nav-tabs nav-justified gap-0 mb-4">
         <li class="nav-item border-start">
           <button data-bs-toggle="tab" class="nav-link  item active" data-filter="all" v-on:click="this.getActive(0)">
-            All
+            {{$t('Products.items[0]')}}
           </button>
         </li>
         <li class="nav-item">
           <button data-bs-toggle="tab" class="nav-link  item " data-filter=".eq" v-on:click="this.getActive(1)">
-            Equipments
+            {{$t('Products.items[1]')}}
           </button>
         </li>
         <li class="nav-item">
           <button data-bs-toggle="tab" class="nav-link  item " data-filter=".ma" v-on:click="this.getActive(2)">
-            Materials
+            {{$t('Products.items[2]')}}
           </button>
         </li>
         <li class="nav-item">
           <button data-bs-toggle="tab" class="nav-link  item " data-filter=".in" v-on:click="this.getActive(3)">
-            Instruments
+            {{$t('Products.items[3]')}}
           </button>
         </li>
         <li class="nav-item">
           <button data-bs-toggle="tab" class="nav-link  item " data-filter=".re" v-on:click="this.getActive(4)">
-            Reagent
+            {{$t('Products.items[4]')}}
           </button>
         </li>
       </ul>
@@ -51,7 +51,7 @@
           <el-scrollbar class="justify-content-evenly d-block d-md-none listOfProducts1"
                         style="height:fit-content;  width: 100%;">
             <div class="d-flex gap-4">
-              <div v-for="item,index in ImageList" :key="index" class="py-2 col-1 mix border-0" :class="items.at(index%4)"
+              <div v-for="(item,index) in ImageList" :key="index" class="py-2 col-1 mix border-0" :class="items.at(index%4)"
                    style="min-width: 200px; flex-shrink: 0;  height: 200px;">
                 <div class="border">
                   <img class="" height="150" :src="item"/>
